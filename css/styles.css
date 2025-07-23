@@ -1,0 +1,823 @@
+/* FONTS */
+/* BEBAS */
+@font-face {
+    font-family: 'Bebas';
+    src: url(/resources/fonts/Bebas_Neue/Bebas_Neue/BebasNeue-Regular.ttf) format('truetype');
+}
+/* SUPREME */
+@font-face {
+    font-family: 'Supreme';
+    src: url('../fonts/Supreme-Variable.woff2') format('woff2'),
+        url('../fonts/Supreme-Variable.woff') format('woff'),
+        url('../fonts/Supreme-Variable.ttf') format('truetype');
+    font-weight: 100 800;
+    font-display: swap;
+    font-style: normal;
+}
+
+/* GOLDEN */
+@font-face {
+    font-family: 'golden';
+    src: url('../resources/fonts/golden-varsity/Golden-Varsity-Regular.ttf') format('truetype');
+}
+/* GOLDEN */
+
+/* GALANTIC */
+@font-face {
+    font-family: 'galantic';
+    src: url('../resources/fonts/galantic/Galantic-Regular.otf') format('opentype');
+}
+/* GALANTIC */
+
+/* TANKER */
+@font-face {
+    font-family: 'Tanker';
+    src: url('../fonts/Tanker-Regular.woff2') format('woff2'),
+        url('../fonts/Tanker-Regular.woff') format('woff'),
+        url('../fonts/Tanker-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+/* FONTS */
+
+/* GENERAL SYLES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 15px;
+    font-family: 'supreme', sans-serif;
+}
+.no-scroll{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    background: none;
+    border: none;
+}
+/* GENERAL SYLES */
+
+/* GENERAL CLASSES */
+
+/* ALIGNMENT CLASSES */
+.container{
+    width: 100%;
+    padding: 2rem 2rem;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: start;
+}
+.text-right{
+    text-align: end;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.mx-auto{
+    margin: 0 auto;
+}
+.gap-1{
+    gap: 1rem;
+}
+.gap-2{
+    gap: 2rem;
+}
+.top{
+    top: 0;
+}
+.bottom{
+    bottom: 0;
+}
+.absolute{
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
+.z-1{
+    z-index: 10;
+}
+/* ALIGNMENT CLASSES */
+
+/* COLOR CLASSES */
+.white-color{
+    color: #fff;
+}
+.black-color{
+    color: #000;
+}
+.red-color{
+    color: #D3181F;
+}
+.fill-red{
+    fill: #D3181F;
+}
+.fill-white{
+    fill: #fff;
+}
+.fill-black{
+    fill: #000;
+}
+.fill-yellow{
+    fill: #FFFF00;
+}
+/* COLOR CLASSES */
+
+/* SIZE CLASSES */
+.icon-size{
+    width: 30px;
+    height: 30px;
+}
+.icon-size-mini{
+    width: 24px;
+    height: 24px;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.section-title{
+    font-size: 2rem;
+    font-family: 'bebas', sans-serif;
+    color: #fff;
+    letter-spacing: 0.5rem;
+}
+.second-title{
+    font-size: 1.5rem;
+    font-family: 'tanker', sans-serif;
+    letter-spacing: 0.3rem;
+}
+.third-title{
+    font-size: 1.4rem;
+    font-family: 'tanker', sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+
+/* SIZE CLASSES */
+
+/* FONT STYLES */
+.bebas{
+    font-family: 'bebas', sans-serif;
+}
+.tanker{
+    font-family: 'tanker', sans-serif;
+}
+.supreme{
+    font-family: 'supereme', sans-serif;
+}
+/* FONT STYLES */
+
+
+/* GENERAL CLASSES */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~ HEADER STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+header{
+    width: 100%;
+    height: 100dvh;
+    background: url(../resources/images/banners/Banner.jpg) no-repeat center/cover;
+}
+
+/*/////////////// NAV STYLES /////////////*/
+nav{
+    padding: 0 3rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    transition: background 0.5s ease;
+}
+nav.active{
+    background-color: rgba(0,0,0,0.9);
+}
+
+.navigation{
+    position: fixed;
+    top: -100%;
+    right: 0;
+    background-color: rgba(0,0,0,0.9);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1rem;
+    visibility: hidden;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0,0.5);
+    transition: top 0.5s ease, visibility 0.5s ease;
+}
+.visibleMenu{
+    top: 0;
+    visibility: visible;
+}   
+.close-nav{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.navList{
+    flex-direction: column;
+}
+.navLink{
+    font-size: 1.5rem;
+    transition: color 0.5s ease;
+}
+.navLink:hover{
+    color: #D3181F;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+/*/////////////// NAV STYLES /////////////*/
+
+/*/////////////// BANNER STYLES /////////////*/
+.banner{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+.banner-content{
+    transition: opacity 1s ease, visibility 1s ease;
+}
+.video-container{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+.banner-ux{
+    padding-top: 1.5rem;
+}
+
+h1{
+    font-size: 70px;
+}
+.line{
+    width: 4.5rem;
+    height: 7rem;
+    background-color: #D3181F;
+}
+.lines-top{
+    z-index: 10;
+}
+.join-text{
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+.start-btn{
+    border: 1px solid #D3181F;
+    padding: 0.3rem 2.5rem;
+    font-size: 1.3rem;
+    overflow: hidden;
+    z-index: 10;
+
+}
+.start-btn::after{
+    content: "";
+    background-color: #D3181F;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+.start-btn:hover::after{
+    transform: translateX(0);
+}
+.play-btn{
+    border: 1px solid #fff;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transition: background 0.5s ease, border 0.5s ease;
+}
+.play-btn:hover{
+    background-color: #D3181F;
+    border: 1px solid #D3181F;
+}
+.play-btn:hover .play-icon{
+    fill: #000;
+}
+
+.banner-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-visible{
+    opacity: 1;
+    visibility: visible;
+}
+.hidden-banner{
+    visibility: hidden;
+    opacity: 0;
+}
+/*/////////////// BANNER STYLES /////////////*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~ HEADER STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~ ROUTINES SECTON STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.routines{
+    width: 100%;
+    height: auto;
+    background: url(../resources/images/banners/Banner-programs.jpg) no-repeat center/cover;
+    padding-bottom: 2rem;
+}
+
+.categories-btns{
+    margin-top: 2rem;
+}
+.category-btn{
+    background: transparent;
+    padding: 1rem 2rem;
+    border:1px solid #D3181F;
+    box-shadow: 12px 12px 20px rgba(0,0,0,0.9);
+    transition: box-shadow 0.5s ease, background 0.5s ease;
+}
+
+.category-btn:hover{
+    background: #D3181F;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.9);
+}
+.category-btn.active{
+    background: #D3181F;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.9);
+}
+.titleDivider{
+    width: 5rem;
+    height: 0.4rem;
+    background-color: #D3181F;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+}
+
+
+
+
+
+/* TABS STYLES */
+.tabs-container{
+    overflow: hidden;
+    margin-top: 2rem;
+}
+.tab-container{
+    margin-top: 2rem;
+}
+.tab-card{
+    color: #fff;
+    width: 20.1rem;
+    height: auto;
+    background: rgba(211, 24, 31, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 1rem 0;
+    border-radius: 1rem;
+    transition: transform 0.5s ease;
+}
+.tab-card:hover{
+    transform: translateY(-10px);
+}
+.list-head{
+    gap: 0.5rem;
+}
+.text-divider{
+    width: 5rem;
+    height: 0.3rem;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+.details-btn{
+    position: relative;
+    border: 1px solid #D3181F;
+    font-size: 1.2rem;
+    padding: 0.2rem 2rem;
+    overflow: hidden;
+}
+.details-btn::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #D3181F;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    box-shadow: 12px 12px 12px 20px #000;
+    transition: transform 0.5s ease;
+    z-index: -1;
+}
+
+.details-btn:hover::after{
+    transform: translateX(0);
+}
+
+
+[data-tab-content]{
+    display: none;
+}
+
+.active[data-tab-content]{
+    display: flex;
+}
+/* TABS STYLES */
+/*~~~~~~~~~~~~~~~~~~~~~~~~ ROUTINES SECTION STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~ BLOG SECTION STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.blog-section{
+    background-color: #000;
+    height: auto;
+}
+.blog-head .titleDivider{
+    width: 3rem;
+    height: 0.4rem;
+}
+.blog-content{
+    height: 100%;
+}
+.blog{
+    max-width: 250px;
+    height: 400px;
+    border-radius: 1rem;
+    border: 1px solid #D3181F;
+}
+.blog img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.blogInfo{
+    width: 100%;
+    background: #000;
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+    border-top: 1px solid #D3181F;
+    gap: 0.5rem;
+}
+.blog-title{
+    font-size: 1.2rem;
+}
+.seeMoreBtn{
+    gap: 0.4rem;
+        margin-left: 0.5rem;
+}
+.seeMoreBtn svg{
+    width: 20px;
+    height: 20px;
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+}
+.seeMoreBtn:hover svg{
+    transform: translateX(10px);
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~ BLOG SECTION STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~ TESTIMONIAL SECTION STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.testimonial{
+    background: url(../resources/images/page-images/Testimonials_bg.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.customer-container{
+    width: 100%;
+    height: 80%;
+}
+.testi-container{
+    max-width: 600px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 2rem 0;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transform: translateX(100%);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out, transform 0.5s ease;
+    pointer-events: none;
+}
+.testi-container.active{
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1;
+}
+.testimonial-head{
+    position: relative;
+    z-index: 1;
+}
+.customer-img{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.testi-container .slider{
+    height: auto;
+}
+
+.btnContent{
+    width: 100%;
+    justify-content: end;
+}
+.opinionBtn{
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.1rem;
+    border: 1px solid #D3181F;
+    transition: background 0.5s ease;
+}
+.opinionBtn:hover{
+    background: #D3181F;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~ TESTIMONIAL SECTION STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~ CONTACT SECTION STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.contact-section{
+    background: url(../resources/images/page-images/contact-edited.jpg) no-repeat center/cover;
+    width: 100%;
+    height: auto;
+}
+
+.form-container{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    padding: 1rem;
+    z-index: 10;
+    justify-content: center;
+    gap: 2rem;
+}
+.contact-space{
+    width: 100%;
+}
+
+.contact-space input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    padding: 0.5rem ;
+    font-size: 1.1rem;
+    border-radius: 0.4rem;
+    outline: none;
+    font-family: 'bebas', sans-serif;
+    transition: border 0.5s ease;
+}
+.contact-space input:focus{
+    border-bottom:1px solid #D3181F ;
+}
+.contact-space input::placeholder{
+    color: #fff;
+    font-family: 'bebas', sans-serif;
+}
+.age-birth{
+    width: 100%;
+}
+
+.contact-title{
+    letter-spacing: 0.2rem;
+}
+.contact-space select{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    padding: 0.5rem ;
+    color: #fff;
+    transition: border 0.5s ease;
+}
+.contact-space select option{
+    background: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid #D3181F;
+    transition: border 0.5s ease;
+}
+
+.contact-space select:focus{
+    border-bottom:1px solid #D3181F;
+}
+.sendBtn{
+    background: transparent;
+    border: 1px solid #D3181F;
+    padding: 0.5rem 2.2rem;
+    font-size: 1.1rem;
+    position: relative;
+    transition: background 0.5s ease;
+}
+.sendBtn:hover{
+    background: #D3181F;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~ CONTACT SECTION STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~ CALENDAR SECTION STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.calendar-section{
+    background: #000;
+}
+#calendar{
+    background: #000;
+    color: #fff;
+}
+#fc-dom-1{
+    color: #D3181F;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~ CALENDAR SECTION STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+footer{
+    background: #000;
+    z-index: 10;
+}
+.logo-footer img{
+    width: 80px;
+    height: 80px;
+}
+.footer-section-d{
+    max-width: 100%;
+}
+.footerLink{
+    transition: color 0.5s ease;
+}
+.footerLink:hover{
+    color: #D3181F;
+}
+
+.info-below-container{
+    border-top: 1px solid #D3181F;
+    padding: 1rem;
+}
+.footer-section iframe{
+    border-radius: 1rem;
+}
+.bottom-text-content{
+    position: absolute;
+    z-index: 0;
+    color: rgba(255, 255, 255, 0.2);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bottom-text{
+    text-align: center;
+
+    font-size: 8rem;
+    user-select: none;
+
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ TRANSITIONS AND EFFECTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.fadeInLeft{
+    animation: fadeInLeft 1s ease;
+}
+.fadeInRight{
+    animation: fadeInRight 1s ease;
+}
+.fadeInTop{
+    animation: fadeInTop 1s ease;
+}
+.enterRight{
+    animation: enterRight 0.5s forwards;
+}
+.outLeft{
+    animation: outLeft 0.5s forwards;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~ KEYFRAMES ~~~~~~~~~~~~~~~~~~~~*/
+@keyframes fadeInLeft{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeInRight{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeInTop{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInBottom{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes enterRight {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes outLeft {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+/*~~~~~~~~~~~~~~~~ KEYFRAMES ~~~~~~~~~~~~~~~~~~~~*/
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ TRANSITIONS AND EFFECTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MEDIAQUERYS ~~~~~~~~~~~~~~~~~~~~~~*/
+@media screen and (max-width: 400px) {
+    .banner-ux{
+        padding-top: 1.8rem;
+    }
+    .banner-ux h1{
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .banner-ux{
+        padding-top: 7rem;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .banner-ux{
+        padding-top: 3rem;
+    }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MEDIAQUERYS ~~~~~~~~~~~~~~~~~~~~~~*/

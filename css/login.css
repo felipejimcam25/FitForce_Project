@@ -1,0 +1,319 @@
+/* FONTS */
+/* BEBAS */
+@font-face {
+    font-family: 'Bebas';
+    src: url(/resources/fonts/Bebas_Neue/Bebas_Neue/BebasNeue-Regular.ttf) format('truetype');
+}
+/* SUPREME */
+@font-face {
+    font-family: 'Supreme';
+    src: url('../fonts/Supreme-Variable.woff2') format('woff2'),
+        url('../fonts/Supreme-Variable.woff') format('woff'),
+        url('../fonts/Supreme-Variable.ttf') format('truetype');
+    font-weight: 100 800;
+    font-display: swap;
+    font-style: normal;
+}
+
+/* GOLDEN */
+@font-face {
+    font-family: 'golden';
+    src: url('../resources/fonts/golden-varsity/Golden-Varsity-Regular.ttf') format('truetype');
+}
+/* GOLDEN */
+
+/* GALANTIC */
+@font-face {
+    font-family: 'galantic';
+    src: url('../resources/fonts/galantic/Galantic-Regular.otf') format('opentype');
+}
+/* GALANTIC */
+
+/* TANKER */
+@font-face {
+    font-family: 'Tanker';
+    src: url('../fonts/Tanker-Regular.woff2') format('woff2'),
+        url('../fonts/Tanker-Regular.woff') format('woff'),
+        url('../fonts/Tanker-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+/* FONTS */
+
+/* GENERAL SYLES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 15px;
+    font-family: 'supreme', sans-serif;
+}
+.no-scroll{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    background: none;
+    border: none;
+}
+/* GENERAL SYLES */
+
+/* GENERAL CLASSES */
+
+/* ALIGNMENT CLASSES */
+.container{
+    width: 100%;
+    padding: 2rem 2rem;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: start;
+}
+.text-right{
+    text-align: end;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.mx-auto{
+    margin: 0 auto;
+}
+.gap-1{
+    gap: 1rem;
+}
+.gap-2{
+    gap: 2rem;
+}
+.top{
+    top: 0;
+}
+.bottom{
+    bottom: 0;
+}
+.absolute{
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
+.z-1{
+    z-index: 10;
+}
+/* ALIGNMENT CLASSES */
+
+/* COLOR CLASSES */
+.white-color{
+    color: #fff;
+}
+.black-color{
+    color: #000;
+}
+.red-color{
+    color: #D3181F;
+}
+.fill-red{
+    fill: #D3181F;
+}
+.fill-white{
+    fill: #fff;
+}
+.fill-black{
+    fill: #000;
+}
+.fill-yellow{
+    fill: #FFFF00;
+}
+/* COLOR CLASSES */
+
+/* SIZE CLASSES */
+.icon-size{
+    width: 30px;
+    height: 30px;
+}
+.icon-size-mini{
+    width: 15px;
+    height: 15px;
+}
+.section-title{
+    font-size: 2rem;
+    font-family: 'bebas', sans-serif;
+    color: #fff;
+    letter-spacing: 0.5rem;
+}
+.second-title{
+    font-size: 1.5rem;
+    font-family: 'tanker', sans-serif;
+    letter-spacing: 0.3rem;
+}
+.third-title{
+    font-size: 1.4rem;
+    font-family: 'tanker', sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+
+/* SIZE CLASSES */
+
+/* FONT STYLES */
+.bebas{
+    font-family: 'bebas', sans-serif;
+}
+.tanker{
+    font-family: 'tanker', sans-serif;
+}
+.supreme{
+    font-family: 'supereme', sans-serif;
+}
+/* FONT STYLES */
+
+
+/* GENERAL CLASSES */
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~ HEADER STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+header{
+    width: 100%;
+    height: 100dvh;
+    background: url(../resources/images/page-images/pexels-victorfreitas-949127.jpg) no-repeat center/cover; 
+    justify-content: center;
+    align-items: center;
+}
+
+/*/////////////// NAV STYLES /////////////*/
+nav{
+    padding: 0 3rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    transition: background 0.5s ease;
+}
+nav.active{
+    background-color: rgba(0,0,0,0.9);
+}
+
+.navigation{
+    position: fixed;
+    top: -100%;
+    right: 0;
+    background-color: rgba(0,0,0,0.9);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1rem;
+    visibility: hidden;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0,0.5);
+    transition: top 0.5s ease, visibility 0.5s ease;
+}
+.visibleMenu{
+    top: 0;
+    visibility: visible;
+}   
+.close-nav{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.navList{
+    flex-direction: column;
+}
+.navLink{
+    font-size: 1.5rem;
+    transition: color 0.5s ease;
+}
+.navLink:hover{
+    color: #D3181F;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+/*/////////////// NAV STYLES /////////////*/
+
+/* /////// LOGIN FORM STYLES /////////////// */
+.login-container{
+    width: 100%;
+    height: 100%;
+}
+.logo-login{
+    width: 100px;
+    height: 100px;
+}
+.login-content {
+    background: transparent; /* Fondo blanco con opacidad */
+    backdrop-filter: blur(20px);         /* Desenfoque al fondo */
+    -webkit-backdrop-filter: blur(20px); /* Safari */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Borde suave */
+    border-radius: 16px;                 /* Bordes redondeados */
+    padding: 2rem;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.login-space{
+    border-bottom: 1px solid #fff;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.3rem;
+}
+label{
+    left: 0;
+}
+
+input{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.5s ease;
+}
+input::placeholder{
+    color: #fff;
+}
+
+.btn-log{
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    transition: background 0.5s ease;
+}
+.btn-log:hover{
+    background: #c7c7c7;
+}
+
+/* /////// LOGIN FORM STYLES /////////////// */

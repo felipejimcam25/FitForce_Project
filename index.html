@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Force</title>
+    <!-- LOCAL CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- LOCAL CSS -->
+</head>
+<body id="body">
+    <header class="relative" id="home">
+        <nav class="flex justify-between" id="nav">
+            <a href="#home" class="logo"><img src="logo/positivo.svg" alt="Logo FitForce"></a>
+            <button class="openNav" id="openNav"><svg class="icon-size fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L96 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></button>
+            <div class="navigation flex justify-between">
+                <div class="close-nav" id="closeNav">
+                    <button id="closeNav" class="coseNavBtn"><svg class="icon-size fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></button>
+                </div>
+                <ul class="navList flex align-center gap-1">
+                    <li><a href="#home" class="navLink white-color bebas">Home</a></li>
+                    <li><a href="#routines" class="navLink white-color bebas">Routines</a></li>
+                    <li><a href="#" class="navLink white-color bebas">Blog</a></li>
+                    <li><a href="#" class="navLink white-color bebas">Calendar</a></li>
+                    <li><a href="#" class="navLink white-color bebas">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="banner">
+            <div class="banner-content flex justify-center column">
+                <div class="lines-top flex gap-1 adsolute top">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="banner-ux">
+                    <h1 class="bebas white-color fadeInTop"><span class="red-color">Train</span> Hard. <br> Stay <span class="red-color">Strong</span>. <br> Be <span class="red-color">Fit</span> Force.</h1>
+                    <span class="bebas white-color join-text flex fadeInRight">Join with us today</span>
+                    <div class="buttons-container flex gap-1 fadeInLeft">
+                        <a href="#routines" class="start-btn white-color bebas relative flex justify-center align-center">START</a>
+                        <button id="playBtn" class="play-btn flex align-center justify-center"><svg class="icon-size-mini fill-white play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></button>
+                    </div>
+                </div>
+                <div class="lines-bottom flex gap-1 absolute bottom">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="video-container absolute top">
+            <video class="banner-video" src="resources/video/video_fitforce_banner.mp4" controls type="video/mp4" autoplay="off"></video>
+        </div>
+    </header>
+
+    <!--~~~~~~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~~~~~-->
+    <main>
+        <!--////// ROUTINES SECTION //////-->
+        <section class="routines container" id="routines">
+            <article class="headSection">
+                <h2 class="section-title text-center">Routines</h2>
+                <div class="titleDivider mx-auto"></div>
+            </article>
+            <article class="categories-content">
+                <div class="categories-btns flex gap-1 justify-center wrap">
+                    <button class="category-btn white-color" data-tab-target="#fitness">FITNESS</button>
+                    <button class="category-btn white-color" data-tab-target="#crossfit">CROSSFIT</button>
+                </div>
+            </article>
+            <article class="tabs-container">
+                <div class="fitness-tab fadeInLeft active flex column justify-center" id="fitness" data-tab-content>
+                    <h3 class="second-title text-center white-color">Fitness</h3>
+                    <div class="tab-container flex justify-center gap-1 wrap">
+                        
+                        <!-- CARD 1 -->
+                        <div class="tab-card flex column gap-1">
+                            <h4 class="third-title text-center uppercase">Begginer</h4>
+                            <div class="trainOrder">
+                                <ul class="routine-list flex column gap-1">
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 1</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 2</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 3</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 4</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 5</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 6</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 7</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="details-btn white-color bebas flex mx-auto">Details</button>
+                        </div>
+                        <!-- CARD 1 -->
+                        
+                        <!-- CARD 2 -->
+                        <div class="tab-card flex column gap-1">
+                            <h4 class="third-title text-center uppercase">iNTERMEDIATE</h4>
+                            <div class="trainOrder">
+                                <ul class="routine-list flex column gap-1">
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 1</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 2</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 3</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 4</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 5</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 6</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 7</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="details-btn white-color bebas flex mx-auto">Details</button>
+                        </div>
+                        <!-- CARD 2 -->
+
+                        <!-- CARD 3 -->
+                        <div class="tab-card flex column gap-1">
+                            <h4 class="third-title text-center uppercase">ADVANCED</h4>
+                            <div class="trainOrder">
+                                <ul class="routine-list flex column gap-1">
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 1</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 2</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 3</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 4</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 5</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 6</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 7</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="details-btn white-color bebas flex mx-auto">Details</button>
+                        </div>
+                        <!-- CARD 3 -->
+
+                    </div>
+                </div>
+            
+                <div class="crossfit-tab fadeInRight flex justify-center column" id="crossfit" data-tab-content>
+                    <h3 class="second-title white-color text-center mx-auto">Crossfit</h3>
+                    <div class="tab-container flex gap-1 justify-center wrap">
+                        <!-- CARD 1 -->
+                        <div class="tab-card flex column gap-1">
+                            <h4 class="third-title text-center">Begginer</h4>
+                            <div class="trainOrder">
+                                <ul class="routine-list flex column gap-1">
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 1</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 2</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 3</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 4</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 5</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 6</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 7</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="details-btn white-color bebas flex mx-auto">Details</button>
+                        </div>
+                        <!-- CARD 1 -->
+
+                        <!-- CARD 2 -->
+                        <div class="tab-card flex column gap-1">
+                            <h4 class="third-title text-center">iNTERMEDIATE</h4>
+                            <div class="trainOrder">
+                                <ul class="routine-list flex column gap-1">
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 1</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 2</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 3</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 4</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 5</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 6</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 7</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="details-btn white-color bebas flex mx-auto">Details</button>
+                        </div>
+                        <!-- CARD 2 -->
+
+                        <!-- CARD 3 -->
+                        <div class="tab-card flex column gap-1">
+                            <h4 class="third-title text-center">ADVANCED</h4>
+                            <div class="trainOrder">
+                                <ul class="routine-list flex column gap-1">
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 1</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 2</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 3</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 4</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 5</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 6</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                    <li class="mx-auto list-head flex column">
+                                        <span class="list-text mx-auto">Level 7</span>
+                                        <div class="text-divider"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="details-btn white-color bebas flex mx-auto">Details</button>
+                        </div>
+                        <!-- CARD 3 -->
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!--////// ROUTINES SECTION //////-->
+
+        <!--////// BlOG SECTION //////////-->
+        <section class="blog-section container flex column gap-2" id="blog">
+            <article class="blog-head flex column align-center">
+                <h2 class="section-title bebas white-color text-center mx-auto ">Blog</h2>
+                <div class="titleDivider mx-auto"></div>
+            </article>
+            <article class="blog-content flex gap-1 justify-center align-center wrap">
+                <div class="blog relative">
+                    <img src="resources/images/page-images/Blog.jpg" alt="" class="blog-img">
+                    <div class="blogInfo flex column absolute bottom ">
+                        <span class="blog-title white-color tanker text-center">How to gain muscle fast</span>
+                        <span class="blog-text white-color supreme text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, vero!</span>
+                        <a href="#" class="seeMoreBtn flex align-center tanker red-color">See More <svg class=" fill-red" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg></a>
+                    </div>
+                </div>
+                <div class="blog relative">
+                    <img src="resources/images/page-images/Blog.jpg" alt="" class="blog-img">
+                    <div class="blogInfo flex column absolute bottom ">
+                        <span class="blog-title white-color tanker text-center">How to gain muscle fast</span>
+                        <span class="blog-text white-color supreme text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, vero!</span>
+                        <a href="#" class="seeMoreBtn flex align-center tanker red-color">See More <svg class=" fill-red" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg></a>
+                    </div>
+                </div>
+                <div class="blog relative">
+                    <img src="resources/images/page-images/Blog.jpg" alt="" class="blog-img">
+                    <div class="blogInfo flex column absolute bottom ">
+                        <span class="blog-title white-color tanker text-center">How to gain muscle fast</span>
+                        <span class="blog-text white-color supreme text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, vero!</span>
+                        <a href="#" class="seeMoreBtn flex align-center tanker red-color">See More <svg class=" fill-red" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg></a>
+                    </div>
+                </div>
+                <div class="blog relative">
+                    <img src="resources/images/page-images/Blog.jpg" alt="" class="blog-img">
+                    <div class="blogInfo flex column absolute bottom ">
+                        <span class="blog-title white-color tanker text-center">How to gain muscle fast</span>
+                        <span class="blog-text white-color supreme text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, vero!</span>
+                        <a href="#" class="seeMoreBtn flex align-center tanker red-color">See More <svg class=" fill-red" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!--////// BlOG SECTION //////////-->
+        
+        <!--////// TETIMONIAL SECTION //////////-->
+        <section class="container testimonial flex column gap-2 align-center" id="opinions">
+            <article class="flex column align-center z-1 testimonial-head">
+                <h2 class="section-title white-color bebas text-center testimonial-title">What People Say</h2>
+                <div class="titleDivider mx-auto"></div>
+            </article>
+            <article class="customer-container relative flex justify-center align-center mx-auto">
+
+                <div class="testi-container absolute active">
+                    <div class="slider flex align-center justify-center column gap-1">
+                        <img src="resources/images/customers/1.jpg" alt="" class="customer-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-size fill-white" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"/></svg>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam nesciunt saepe laudantium officia corrupti quidem natus pariatur repudiandae nostrum.</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-size fill-white" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
+
+                        <div class="customer-details flex column">
+                            <span class="customer-name text-center">Kai Johnson</span>
+                            <span class="customer-time text-center">1 Year Ago</span>
+                            <span class="customer-place text-center">Maryland, USA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-container absolute">
+                    <div class="slider flex align-center justify-center column gap-1">
+                        <img src="resources/images/customers/2.jpg" alt="" class="customer-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-size fill-white" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"/></svg>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam nesciunt saepe laudantium officia corrupti quidem natus pariatur repudiandae nostrum.</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-size fill-white" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
+
+                        <div class="customer-details flex column">
+                            <span class="customer-name text-center">Kai Johnson</span>
+                            <span class="customer-time text-center">1 Year Ago</span>
+                            <span class="customer-place text-center">Maryland, USA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-container absolute">
+                    <div class="slider flex align-center justify-center column gap-1 ">
+                        <img src="resources/images/customers/3.jpg" alt="" class="customer-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-size fill-white" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"/></svg>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam nesciunt saepe laudantium officia corrupti quidem natus pariatur repudiandae nostrum.</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-size fill-white" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
+
+                        <div class="customer-details flex column">
+                            <span class="customer-name text-center">Kai Johnson</span>
+                            <span class="customer-time text-center">1 Year Ago</span>
+                            <span class="customer-place text-center">Maryland, USA</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="btnContent flex">
+                <button class="opinionBtn flex align-center white-color tanker">Your Opinion</button>
+            </div>
+        </section>
+        <!--////// TETIMONIAL SECTION //////////-->
+
+        <!--////// CONTACT SECTION //////////-->
+        <section class="contact-section flex column gap-2 container">
+            <article class="flex column align-center z-1 testimonial-head">
+                <h2 class="section-title white-color bebas text-center testimonial-title">Contact Us</h2>
+                <div class="titleDivider mx-auto"></div>
+            </article>
+
+            <article class="form-container mx-auto flex align-center relative wrap">
+            
+                <form action="#" method="POST" class="flex column gap-1">
+                    <div class="contact-space flex column align-center">
+                        <input type="text" name="name_txt" class="white-color" placeholder="Full Name" required autocomplete="off">
+                    </div>
+                    <div class="contact-space flex column align-center">
+                        <input type="text" name="phone_txt" class="white-color" placeholder="Phone" required autocomplete="off">
+                    </div>
+                    <div class="contact-space flex column align-center">
+                        <input type="email" name="email_txt" class="white-color" placeholder="Email" required autocomplete="off">
+                    </div>
+                    <div class="contact-space flex age-birth mx-auto">
+                        <input type="text" name="age_txt" class="white-color" placeholder="Age" required autocomplete="off">
+                        <input type="date" name="birth_txt" class="white-color" placeholder="Birthdate" required autocomplete="off">
+                    </div>
+                    <div class="contact-space flex column align-center">
+                        <select name="select_txt" id="" class="color-white bebas" required autocomplete="off">
+                            <option value="0" class="white-color bebas">Genre</option>
+                            <option value="Male" class="white-color bebas">Male</option>
+                            <option value="Female" class="white-color bebas">Female</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Send" class="sendBtn flex mx-auto bebas white-color">
+                </form>
+
+                <div class="contact-info flex column gap-1">
+                    <h3 class="section-title white-color text-center">Contact Us</h3>
+                    <span class="white-color">You can also contact us in our contact lines or social networks</span>
+                    <div class="contact-lines flex column gap-1">
+                        <h4 class="contact-title white-color bebas">Contact Lines</h4>
+                        <span class="flex align-center gap-1 white-color supreme"><svg class="icon-size-mini fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg> fitforcenewlife@gmail.com</span>
+                        <span class="flex align-center gap-1 white-color supreme"><svg class="icon-size-mini fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg> +1 6505550199</span>
+                        <span class="flex align-center gap-1 white-color supreme"><svg class="icon-size-mini fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg> Silicon Valley, CA</span>
+                    </div>
+                    <div class="contact-social flex column gap-1">
+                        <h4 class="contact-title white-color bebas">Social Networks</h4>
+                        <span class="flex align-center gap-1 white-color supreme"><svg class="icon-size-mini fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg> Fit_Force</span>
+                        <span class="flex align-center gap-1 white-color supreme"><svg class="icon-size-mini fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> WhatsApp</span>
+                        <span class="flex align-center gap-1 white-color supreme"><svg class="icon-size-mini fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 25.832031 46 A 1.0001 1.0001 0 0 0 26.158203 46 L 31.832031 46 A 1.0001 1.0001 0 0 0 32.158203 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 33 44 L 33 30 L 36.820312 30 L 38.220703 23 L 33 23 L 33 21 C 33 20.442508 33.05305 20.398929 33.240234 20.277344 C 33.427419 20.155758 34.005822 20 35 20 L 38 20 L 38 14.369141 L 37.429688 14.097656 C 37.429688 14.097656 35.132647 13 32 13 C 29.75 13 27.901588 13.896453 26.71875 15.375 C 25.535912 16.853547 25 18.833333 25 21 L 25 23 L 22 23 L 22 30 L 25 30 L 25 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 32 15 C 34.079062 15 35.38736 15.458455 36 15.701172 L 36 18 L 35 18 C 33.849178 18 32.926956 18.0952 32.150391 18.599609 C 31.373826 19.104024 31 20.061492 31 21 L 31 25 L 35.779297 25 L 35.179688 28 L 31 28 L 31 44 L 27 44 L 27 28 L 24 28 L 24 25 L 27 25 L 27 21 C 27 19.166667 27.464088 17.646453 28.28125 16.625 C 29.098412 15.603547 30.25 15 32 15 z"/></svg> FitForce</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!--////// CONTACT SECTION //////////-->
+
+        <!--////// CALENDAR SECTION //////////-->
+        <section class="container calendar-section">
+            <div id='calendar'></div>
+        </section>
+        <!--////// CALENDAR SECTION //////////-->
+    </main>
+    <!--~~~~~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~~~~~~~-->
+    
+
+    
+    <!--~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~~ BOTTOM TEXT ~~~~~~~~~~~~~~~~~~-->
+    <div class="bottom-text-content absolute">
+        <h2 class="bottom-text bebas ">FITFORCE</h2>
+    </div>
+    <!--~~~~~~~~~~~~~~~~ BOTTOM TEXT ~~~~~~~~~~~~~~~~~~-->
+    <footer class="relative">
+        <div class="footer-container container flex justify-center align-center gap-2 mx-auto wrap">
+            
+            <div class="footer-section-d flex column gap-1">
+                <a href="" class="logo-footer"><img src="logo/positivo.svg" alt="Logo FitForce"></a>
+                <div class="abou-footer flex column">
+                    <span class="footer-title red-color bebas">About Us</span>
+                    <span class="supreme white-color">We help you to achive your dreamed body with exersice, dicipline, consistency, and kindness</span>
+                </div>
+                <div class="contact-footer flex column">
+                    <span class="footer-title red-color bebas">Contact Us</span>
+                    <span class="flex align-center gap-1 white-color supreme"><svg class="icon-size-mini fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg> fitforcenewlife@gmail.com</span>
+                    <span class="flex align-center gap-1 white-color supreme"><svg class="icon-size-mini fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg> +1 6505550199</span>
+                </div>
+            </div>
+
+            <div class="footer-section flex gap-2 justify-center align-center mx-auto">
+                <div class="footer-lis-container flex column gap-1 align-center">
+                    <span class="footer-title red-color bebas">Information</span>
+                    <ul class="footer-list flex column gap-1 text-center">
+                        <li><a href="#" class="footerLink text-center white-color">Routines</a></li>
+                        <li><a href="#" class="footerLink text-center white-color">Location</a></li>
+                        <li><a href="#" class="footerLink text-center white-color">Contact</a></li>
+                        <li><a href="#" class="footerLink text-center white-color">Opinions</a></li>
+                        <li><a href="#" class="footerLink text-center white-color">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-lis-container flex column gap-1 align-center">
+                    <span class="footer-title red-color bebas">Important</span>
+                    <ul class="footer-list  flex column gap-1 text-center">
+                        <li><a href="#" class="footerLink text-center white-color">Privacy Policy</a></li>
+                        <li><a href="#" class="footerLink text-center white-color">Terms & Conditions</a></li>
+                        <li><a href="#" class="footerLink text-center white-color">Support</a></li>
+                        <li><a href="#" class="footerLink text-center white-color">Schedule</a></li>
+                        <li><a href="#" class="footerLink text-center white-color">Subscription</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-section mx-auto flex column align-center justify-center gap-1">
+                <span class="footer-title red-color bebas flex align-center"><svg class="icon-size-mini fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg> Our Location</span>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83629.83448573518!2d-121.9111341!3d37.3709229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcb8d34998bad%3A0xe762c548970cc463!2s24%20Hour%20Fitness!5e1!3m2!1ses!2scr!4v1751226787287!5m2!1ses!2scr" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="info-below-container">
+            <div class=" flex mx-auto justify-center gap-1">
+                <a href=""><svg class="icon-size-mini fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 25.832031 46 A 1.0001 1.0001 0 0 0 26.158203 46 L 31.832031 46 A 1.0001 1.0001 0 0 0 32.158203 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 33 44 L 33 30 L 36.820312 30 L 38.220703 23 L 33 23 L 33 21 C 33 20.442508 33.05305 20.398929 33.240234 20.277344 C 33.427419 20.155758 34.005822 20 35 20 L 38 20 L 38 14.369141 L 37.429688 14.097656 C 37.429688 14.097656 35.132647 13 32 13 C 29.75 13 27.901588 13.896453 26.71875 15.375 C 25.535912 16.853547 25 18.833333 25 21 L 25 23 L 22 23 L 22 30 L 25 30 L 25 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 32 15 C 34.079062 15 35.38736 15.458455 36 15.701172 L 36 18 L 35 18 C 33.849178 18 32.926956 18.0952 32.150391 18.599609 C 31.373826 19.104024 31 20.061492 31 21 L 31 25 L 35.779297 25 L 35.179688 28 L 31 28 L 31 44 L 27 44 L 27 28 L 24 28 L 24 25 L 27 25 L 27 21 C 27 19.166667 27.464088 17.646453 28.28125 16.625 C 29.098412 15.603547 30.25 15 32 15 z"/></svg></a>
+                <a href=""><svg class="icon-size-mini fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+                <a href=""><svg class="icon-size-mini fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~-->
+
+
+
+
+
+
+<!-- JAVASCRIPT FILE LINK -->
+    <script src="js/app.js"></script>
+
+        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.18/index.global.min.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+
+    </script>
+</body>
+</html>
