@@ -256,8 +256,8 @@ nav.active{
     color: #D3181F;
 }
 .logo img{
-    width: 80px;
-    height: 80px;
+    width: 70%;
+    height: 70px;
 }
 /*/////////////// NAV STYLES /////////////*/
 
@@ -815,6 +815,62 @@ footer{
     }
 }
 @media screen and (min-width: 1280px) {
+
+    /*/////////////// NAV STYLES /////////////*/
+    nav{
+        padding: 0 3rem;
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
+        transition: background 0.5s ease;
+    }
+    nav.active{
+        background-color: rgba(0,0,0,0.9);
+    }
+
+    .navigation{
+        position: initial;
+        top: 0;
+        right: 0;
+        background-color: transparent;
+        width: initial;
+        display: flex;
+        flex-direction: initial;
+        justify-content: space-between;
+        align-items: center;
+        padding: initial;
+        visibility: visible;
+        box-shadow: initial;
+        transition: top 0.5s ease, visibility 0.5s ease;
+    }
+    .visibleMenu{
+        top: 0;
+        visibility: visible;
+    } 
+    .openNav{
+        display: none;
+    }
+    .close-nav{
+        display: none;
+    }
+    .navList{
+        flex-direction: initial;
+    }
+    .navLink{
+        font-size: 1.5rem;
+        transition: color 0.5s ease;
+    }
+    .navLink:hover{
+        color: #D3181F;
+    }
+    .logo img{
+        width: 80px;
+        height: 80px;
+    }
+    /*/////////////// NAV STYLES /////////////*/
+
+
+
     .banner-ux{
         padding-top: 3rem;
     }
