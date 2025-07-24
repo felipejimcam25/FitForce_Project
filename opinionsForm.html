@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinions</title>
+    <!-- LOCAL CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="flex justify-between" id="nav">
+            <a href="index.html" class="logo"><img src="logo/SVG/Logo-white.svg" alt="Logo FitForce"></a>
+            <button class="openNav" id="openNav"><svg class="icon-size fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L96 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></button>
+            <div class="navigation flex justify-between">
+                <div class="close-nav" id="closeNav">
+                    <button id="closeNav" class="coseNavBtn"><svg class="icon-size fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></button>
+                </div>
+                <ul class="navList flex align-center gap-1">
+                    <li><a href="#home" class="navLink white-color bebas">Home</a></li>
+                    <li><a href="#routines" class="navLink white-color bebas">Routines</a></li>
+                    <li><a href="#" class="navLink white-color bebas">Blog</a></li>
+                    <li><a href="#" class="navLink white-color bebas">Calendar</a></li>
+                    <li><a href="#" class="navLink white-color bebas">Contact</a></li>
+                </ul>
+            </div>
+    </nav>
+    <section id="opinion-form-section" class="flex justify-center align-center">
+        <article class="container flex justify-center align-center form-container form-container-opinion">
+            <form action="#" class="flex column gap-2 form-opinion">
+                <div class="form-content flex column text-center white-color">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" placeholder="Full Name" required autocomplete="off">
+                </div>
+                <div class="form-content flex column text-center white-color">
+                    <label for="city">Your City</label>
+                    <input type="text" name="city" placeholder="City" required autocomplete="off">
+                </div>
+                <div class="form-content flex column text-center white-color">
+                    <label for="age">Your Age</label>
+                    <input type="text" name="age" placeholder="Age" required autocomplete="off">
+                </div>
+                <div class="form-content flex column text-center white-color">
+                    <label for="email">Your email</label>
+                    <input type="email" name="email" placeholder="Email" required autocomplete="off">
+                </div>
+                <div class="form-content flex column text-center white-color">
+                    <label for="opinion">Your opinion</label>
+                    <input type="text" name="opinion" placeholder="Your Opinion" required autocomplete="off">
+                </div>
+                <div class="form-content flex column text-center white-color select-container">
+                    <label for="program">Select program</label>
+                    <select name="program" id="program">
+                        <option value="null">Select option</option>
+                        <option value="Fitness">Fitness</option>
+                        <option value="Crossfit">Crossfit</option>
+                    </select>
+                </div>
+                <input type="submit" value="Send" class="opinion-form-btn sendBtn white-color" name="submit-btn">
+            </form>
+        </article>
+    </section>
+</body>
+</html>
